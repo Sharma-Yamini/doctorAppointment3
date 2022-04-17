@@ -117,7 +117,7 @@
           </div>
 
           <div class="col-12 mt-5">
-            <button type="submit" class="first btn-primary " onclick="alert('Successfully Booked!')">
+            <button type="submit" [disabled]="!appointmentForm.valid" class="first btn-primary " onclick="alert('Successfully Booked!')">
               Book Appointment
             </button>
             <button
